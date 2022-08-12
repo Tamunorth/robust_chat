@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
+import '.env.dart';
+
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
 /// Example:
@@ -50,7 +52,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAQil67gvM05ZaPBXdD-ZvuBuK-lMA-VxQ',
+    apiKey: FIREBASE_API_KEY,
     appId: '1:445411832764:android:8832fb91acf9a9c60771b9',
     messagingSenderId: '445411832764',
     projectId: 'robust-chat-865b4',
@@ -58,12 +60,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBS2JYb7ymKOf8xYFrLTDj8HRh4O9TeQkM',
+    apiKey: FIREBASE_API_KEY,
     appId: '1:445411832764:ios:8886b89ad2d1b15c0771b9',
     messagingSenderId: '445411832764',
     projectId: 'robust-chat-865b4',
     storageBucket: 'robust-chat-865b4.appspot.com',
-    iosClientId: '445411832764-8m9k31lg6jsmk6ganstjp6dffj8q4qu8.apps.googleusercontent.com',
+    iosClientId:
+        '445411832764-8m9k31lg6jsmk6ganstjp6dffj8q4qu8.apps.googleusercontent.com',
     iosBundleId: 'com.example.robustChatApp',
   );
 }

@@ -1,0 +1,1 @@
+static const String FIREBASE_API_KEY = 'AIzaSyBS2JYb7ymKOf8xYFrLTDj8HRh4O9TeQkM';
